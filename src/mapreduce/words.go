@@ -25,7 +25,7 @@ func WordCount(text string) map[string]int {
 	words := strings.FieldsFunc(text, f)
 
 	n := len(words)
-	size := max(1, n/10)
+	size := max(1, n/30)
 	for i, j := 0, size; i < n; i, j = j, j+size {
 		if j > n {
 			j = n
